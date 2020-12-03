@@ -115,8 +115,12 @@ const circle={
     console.log('doira');
   }
 };
+  // const clone ={};
   // for(let key in circle)
-  // console.log(key, circle[key]); 
-  for(let entry of Object.entries( circle))
-  console.log(entry);
+  // clone[key]=circle[key];
+
+Object.assign({},circle);
+
+
+  console.log(clone);
 

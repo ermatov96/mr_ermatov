@@ -93,10 +93,9 @@ var circle = {
   draw: function draw() {
     console.log('doira');
   }
-}; // for(let key in circle)
-// console.log(key, circle[key]); 
+}; // const clone ={};
+// for(let key in circle)
+// clone[key]=circle[key];
 
-for (var _i = 0, _Object$entries = Object.entries(circle); _i < _Object$entries.length; _i++) {
-  var entry = _Object$entries[_i];
-  console.log(entry);
-}
+Object.assign({}, circle);
+console.log(clone);
